@@ -3,13 +3,32 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-}
+    
+    @media @phone {
+        img.blast {
+          width: 100%
+        }
+        img.sky {
+          display: none;
+        }
+        img.launch {
+          display: none;
+        }
+    }
+}   
 .walk-styling() {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @phone {
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        padding: 5%;
+    }
 }
 
 .custom-button(@btn-bg-color, @wild-sand) {
@@ -26,5 +45,9 @@
     &:hover {
         background-color: @hover-bg-color;
         color: @hover-text-color;
+    }
+    @media @phone {
+        width: 100%;
+        padding: 6%;
     }
 }

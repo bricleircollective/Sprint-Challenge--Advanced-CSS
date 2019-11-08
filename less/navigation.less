@@ -9,6 +9,19 @@ nav {
     padding: 2% 0% 2% 26%;
     border-bottom: 2px solid @nav-border;
 
+    @media @phone {
+        width: 100%;
+        margin: 0% auto;
+        padding: 3% 0% 3% 16%;
+
+        .right-nav {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0% 21% 0% 0%;
+            padding: 0% 0% 0% 0%;
+        }
+    }
+
     a {
         padding: 2% 0% 0% 3%;
         color: @nav-font;
