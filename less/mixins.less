@@ -1,4 +1,17 @@
 // Mixins Here
+.space-img-mixin() {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.walk-styling() {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+}
+
 .custom-button(@btn-bg-color, @wild-sand) {
     background-color: @btn-bg-color;
     border: none;
@@ -9,4 +22,9 @@
     display: inline-block;
     font-size: 18px;
     border-radius: 5px;
+
+    &:hover {
+        background-color: @hover-bg-color;
+        color: @hover-text-color;
+    }
 }

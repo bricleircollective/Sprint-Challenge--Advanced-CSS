@@ -248,6 +248,10 @@ footer {
   font-size: 18px;
   border-radius: 5px;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: navy;
+  color: yellow;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
